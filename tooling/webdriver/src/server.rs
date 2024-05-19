@@ -48,7 +48,7 @@ impl TauriOptions {
     map.insert("browserName".into(), json!("webview2"));
     map.insert(
       "ms:edgeOptions".into(),
-      json!({"binary": self.application, "args": self.args, "webviewOptions": self.webview_options}),
+      json!({"binary": self.application, "args": self.args}),
     );
     map
   }
